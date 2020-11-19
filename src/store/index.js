@@ -122,7 +122,7 @@ export default createStore({
     
     async cargarLocalStorage({commit, state }){
       if (localStorage.getItem('usuario')) {
-        commit('setuser', JSON.parse(localStorage.getItem('usuario')))
+        commit('setUser', JSON.parse(localStorage.getItem('usuario')))
       } else {
         return commit('setUser', null)
       }
